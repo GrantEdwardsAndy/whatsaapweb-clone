@@ -7,6 +7,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert'
 import SearchOutlined from '@mui/icons-material/SearchOutlined'
 import SidebarChat from './SidebarChat'
 import db from './firebase'
+import me from './image/me.jpeg'
 
 const Sidebar = () => {
 
@@ -32,7 +33,7 @@ const Sidebar = () => {
   return (
       <div className='sidebar'>
           <div className="sidebar_header">
-              <Avatar />
+              <Avatar src={me} />
               <div className="sidebar_headerRight">
                   <IconButton>
                     <DonutLargeIcon />
